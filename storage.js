@@ -9,13 +9,7 @@ class Storage {
     }
 
     get(name) {
-        let local = localStorage.getItem(name);
-
-        if (local) {
-            return local;
-        }
-
-        return "";
+        return localStorage.getItem(name);
     }
 
 }
